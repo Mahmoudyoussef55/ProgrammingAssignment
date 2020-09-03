@@ -18,6 +18,8 @@ makeCacheMatrix <- function(x=matrix ()){
   getInv<- function() inverse1
   list(set=set, get= get, setInv=setInv, getInv=getInv)
 }
+## this function solve the matrix by getting it;s inverse
+
   
   cacheSolve<- function(x,...){
     inv<- x$getInv()
